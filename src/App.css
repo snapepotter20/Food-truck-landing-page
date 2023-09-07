@@ -1,38 +1,315 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
   min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+.container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-left: 20px;
+  justify-content: space-between;
+  margin: 0 auto;
+  min-height: 200px;
+}
+.span-word{
+  color: #E23744;
+}
+.section2 div img{
+  height: 804px;
+  width: 735px;
+  margin: 12px 12px;
+}
+.img2{
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  left: 48%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 734px;
+  height: 834px;
+}
+.img3{
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  left: 88%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 122px;
+  height: 42px;
+  margin-top: 22px;
+}
+.image img{
+  padding: 70px 60px;
+}
+.content h1{
+  font-size: 70px;
+  padding: 30px 60px;
+  color: #0E2368;
+}
+.content p{
+  padding: 10px 60px;
+  margin: 12px;
+  color: grey;
+}
+.explore-cta{
+  padding: 15px 25px;
+  margin-left: 68px;
+  margin-top: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color:#E23744;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.aboutcontainer{
+    display: flex;
+    padding-left: 15px;
+    justify-content: space-between;
+    margin: 182px 100px;
+    min-height: 200px;
+    background-color: rgb(245, 240, 240);
+}
+.aboutcontent h2{
+  font-size: 50px;
+  margin-left: 180px;
+  margin-top: 70px;
+  color: #0E2368;
+}
+.aboutcontent p{
+  font-size: 20px;
+  margin-left: 180px;
+  margin-top: 30px;
+  color: gray;
+}
+.cta2{
+  margin-left: 170px;
+  margin-top: 30px;
+}
+.latest{
+  font-size: 50px;
+  margin-left: 59px;
+  margin-top: 70px;
+  margin-bottom: 35px;
+  color: #0E2368;
+}
+.articlescontainer{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25px;
+}
+.articlescontainer h1{
+  font-size: 50px;
+  margin: 20px;
+}
+.goals{
+  margin:15px;
+  margin-left: 35px;
+  min-height: 200px;
+  color: #0E2368;
+}
+.goals img{
+  width: 320px;
+  height: 264px;
+}
+.goals p{
+  margin: 15px;
+  margin-left:-1px;
+  margin-top: 20px;
+}
+.goals button{
+  margin-left: -1px;
+  margin-top: 30px;
+  padding: 15px 30px;
+  border-radius: 20px;
+  color: #0E2368;
+}
+.item-head{
+  font-size: 30px;
+}
+.item-para{
+  font-size: 20px;
+}
+.contactcontainer{
+  display: flex;
+  justify-content: space-between;
+  margin: 37px;
+  padding: 59px;
+  background-color: rgb(245, 240, 240);
+}
+.contactus{
+  display: flex;
+  justify-content: space-between;
+  margin: -130px;
+  padding: 65px;
+  color: #0E2368;
+}
+.image2{
+  margin-top: 88px;
+}
+.address{
+  margin: 37px;
+  padding: 59px;
+}
+.address ul{
+  margin: 15px;
+}
+.address h3{
+  margin: 15px;
+}
+.more{
+  margin: 37px;
+  padding: 59px;
+}
+.more ul{
+  margin: 10px;
+}
+.more h3{
+  margin: 10px;
+}
+.links{
+  margin: 37px;
+  padding: 59px;
+}
+.links h3{
+  margin: 4px;
+}
+.media{
+  display: flex;
+  justify-content: space-between;
+}
+.socialmedia img{
+  height: 25px;
+  width: 30px;
+  margin: 12px;
+  margin-top: 25px;
+  margin-left: 4px;
+}
+.center{
+  margin-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    padding-left: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .content h1 {
+    font-size: 40px;
+    padding: 20px 10px;
   }
+
+  .content p {
+    padding: 5px 10px;
+  }
+
+  .explore-cta {
+    margin: 15px 10px;
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .container {
+    padding-left: 30px; 
+  }
+
+  .content h1 {
+    font-size: 50px; 
+    padding: 25px 40px; 
+  }
+
+  .content p {
+    font-size: 16px; 
+    padding: 10px 40px;
+  }
+
+  .explore-cta {
+    padding: 12px 20px; 
+    margin: 15px 0; 
+  }
+
+  .aboutcontainer {
+    margin: 150px 100px; 
+  }
+
+  .aboutcontent h2 {
+    font-size: 40px; 
+  }
+
+  .aboutcontent p {
+    font-size: 18px; 
+    margin-top: 20px;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+  .container {
+    padding-left: 50px; 
+    min-height: 400px;
+  }
+  
+  .section2 div img{
+    margin: 25px 25px;
+  }
+  .img1{
+    left: 28%;
+    width: 50%; 
+    height: auto;
+  }
+  .img2 {
+    left: 28%;
+    width: 50%; 
+    height: 58px;
+  }
+  .img3 {
+    left: 58%;
+    width: 100%; /* Adjust width for responsiveness */
+    max-width: 72px; /* Limit maximum width */
+    height: auto;
+    margin-top: 42px;
+  }
+  
+  .content h1 {
+    font-size: 40px; 
+    padding: 40px 80px; 
+  }
+
+  .content p {
+    font-size: 18px; 
+    padding: 15px 80px; 
+  }
+
+  .explore-cta {
+    margin-left: 100px; 
+  }
+
+  .aboutcontainer {
+    margin: 100px 200px; 
+  }
+
+  .aboutcontent h2 {
+    font-size: 60px; 
+  }
+
+  .aboutcontent p {
+    font-size: 24px; 
+    margin-top: 40px; 
+  }
+
 }
